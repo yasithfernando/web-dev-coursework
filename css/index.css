@@ -1,0 +1,94 @@
+
+.header-container{
+    position: relative;
+    height: 900px;
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.1)), url('../img/v3_4.png');
+
+}
+
+.title{
+    position: absolute;
+    width: 50%;;
+    line-height: 1;
+    top: 208px;
+    left: 100px;
+}
+
+.title-visit{
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0 0 0 0;
+    color: rgb(255, 255, 255);
+}
+
+.title-srilanka{
+    font-size: 150px;
+    font-weight: 800;
+    margin: 0 0 0 0;
+    color: #ffffff;
+    /* text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2); */
+    letter-spacing: 0.02em;
+}
+
+.title p{
+    margin-top: 0;
+    line-height: 1.5;
+    width: 85%;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.view-gallery{
+    height: 55px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #618500;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.description .view-gallery{
+    background-color: black;
+}
+
+
+/* Sub Topic Section */
+
+.sub-container{
+    margin: 70px 8% 0px 8%;
+}
+
+.location-container{
+    height: 417px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+
+}
+
+.image{
+    height: 417px;
+    width: 659px;
+    border-radius: 12px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.description h1{
+    width: 600px;
+    line-height: 0.8;
+}
+
+.description p{
+    font-size: 18px;
+}
+

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Navigation Bar Styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    height: 80px;
+    padding: 0 20px;
+    background-color: #fff;
+  }
+
+.visit{
+    padding-left: 80px;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.srilanka{
+    font-weight: 700;
+    font-size: 30px;
+}
+  
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+.nav-links li {
+    margin: 0 10px;
+    padding-right: 80px;
+    font-size: 18px;
+  }
+  
+.nav-links li a, .logo a {
+    color: rgb(32, 32, 32);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+.nav-links li a:hover {
+    color: #618500;
+  }
+
+.nav-links li a:active{
+  border: 1px solid black;
+}
+
+a.current {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: red;
+}
+  
+.nav-links {
+    margin-left: auto;
+  }
+  
+  
