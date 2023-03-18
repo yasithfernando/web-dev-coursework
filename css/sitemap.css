@@ -1,0 +1,91 @@
+.sitemap-heading {
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.sitemap-container {
+justify-content: center;
+padding-top: 0%;
+}
+
+#svg-home {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    top: 127px;
+    left: 592px;
+}
+
+#svg-home:hover svg {
+    transform: scale(1.005);
+    transition: transform 0.3s ease-in-out;
+}
+
+#svg-quiz {
+    position: absolute;
+    top: 252px;
+    left: 900.58px;
+}
+
+#svg-student-details {
+    position: absolute;
+    top: 440.01px;
+    left: 1035.44px;
+}
+
+#svg-sitemap {
+    position: absolute;
+    top: 628.03px;
+    left: 900.58px;
+}
+
+#svg-gallery {
+    position: absolute;
+    top: 712.91px;
+    left: 653.07px;
+}
+
+#svg-comments-form {
+    position: absolute;
+    top: 628.03px;
+    left: 405.56px;
+}
+
+#svg-buy-products {
+    position: absolute;
+    top: 440.01px;
+    left: 258px;
+}
+
+#svg-content-page {
+    position: absolute;
+    top: 252px;
+    left: 405.56px;
+}
+
+.small-circles:hover {
+    width: 200px;
+    height: 200px;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+svg:hover path {
+    fill: rgba(164, 237, 129, 1);
+}
+
+svg:hover circle {
+    stroke: rgba(164, 237, 129, 1);
+    stroke-width: 2;
+}
+
+a svg{
+    color: #000;
+  }
+
+  a:visited {
+    color: #000;
+  }
