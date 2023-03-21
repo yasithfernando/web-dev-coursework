@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // Loop through the navbar links and compare their URLs with the current URL
     var navbarLinks = document.getElementsByTagName("a");
-    console.log(navbarLinks.length);
+    //console.log(navbarLinks.length);
     for (var i = 0; i < navbarLinks.length; i++) {
       var linkURL = navbarLinks[i].href;
       console.log(linkURL + " --- " + currentURL);
