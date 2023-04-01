@@ -13,8 +13,10 @@ xhr.onload = function(){
 }
 
 
+
 //Highlight current page on navbar
-document.addEventListener("DOMContentLoaded", function() {
+const navLinkHighlight = ()=>{
+  document.addEventListener("DOMContentLoaded", function() {
     // Get the current URL
     var currentURL = window.location.href;
   
@@ -30,3 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   });
+}
+
+  document.getElementsByClassName('body').onload(navLinkHighlight());
