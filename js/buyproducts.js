@@ -114,26 +114,33 @@ function clearCart() {
     const nameField = document.querySelector("#name-field");
     const contactField = document.querySelector("#contact-field");
   
-    // Get the name and contact values
-    const nameValue = nameField.value;
-    const contactValue = contactField.value;
+    // // Get the name and contact values
+    // const nameValue = nameField.value;
+    // const contactValue = contactField.value;
   
-    // Check if the name and contact fields are not empty
-    if (nameValue.trim() == "" || contactValue.trim() == "") {
-      alert("Please enter your name and contact information.");
-      return;
-    }
+    // // Check if the name and contact fields are not empty
+    // if (nameValue.trim() == "" || contactValue.trim() == "") {
+    //   alert("Please enter your name and contact information.");
+    //   return;
+    // }
   
     // Create an object with the order details
-    const order = {
-      name: nameValue,
-      contact: contactValue,
-      products: cart,
-      total: total.toFixed(2)
-    }
+    // const order = {
+    //   productName: nameValue,
+    //   quantity: contactValue,
+    //   price: cart,
+    //   total: total.toFixed(2)
+    // }
   
-    // Send the order data to the server (not implemented in this example)
-    console.log(order);
+    // Save the order details to local storage
+
+    console.log(cart);
+    if(cart){
+      localStorage.setItem('cart', JSON.stringify(cart));
+      localStorage.setItem('totalPrice', total.toFixed(2))
+    }
+
+    window.location.href = 'checkout.html';
   
     // Show a confirmation message and clear the cart
     alert("Thank you for your order! Your total is $" + order.total);

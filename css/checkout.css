@@ -1,0 +1,208 @@
+.container{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkout-container{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+.order-details{
+    height: auto;
+    padding: 20px;
+    background-color: rgb(243, 243, 243);
+}
+
+.order-details .details{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.order-details h4{
+    font-weight: 400;
+}
+
+.order-details ul{
+    list-style: none;
+    padding: 0;
+}
+
+#item-cards li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #0079ca;
+    border-radius: 5px;
+    height: 30px;
+}
+  
+  .item-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  
+  .item-quantity {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .item-price {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+  }
+
+  .rmv-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    font-weight: 600;
+  }
+
+  .items .total{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+.payment-details, .billing-details, .contact-details{
+    padding: 20px;
+    height: auto;
+}
+.payment-form{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.payment-form label{
+    color: rgb(107, 107, 107);
+}
+
+.payment-form input, .address-form input, .contact-form input{
+    height: 33px;
+    width: 400px;
+    margin-right: 40px;
+}
+
+.payment-form .input-field{
+    margin-bottom: 40px;
+}
+
+.payment-form .input-field input{
+    width: 350px;
+}
+
+.payment-form .form-elements{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+}
+
+
+.address-summary, .contact-summary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-button{
+    background-color: rgb(26, 26, 26);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 110px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-button-icon{
+    display: inline-block;
+    margin-right: 5px;
+    transition: transform 0.6s ease-out;
+}
+
+.edit-button.collapsed .edit-button-icon{
+    transform: rotate(-180deg);
+
+}
+
+.edit-button.collapsed .edit-button-text {
+    margin-left: 5px;
+  }
+  
+  .edit-button-text {
+    display: inline-block;
+    font-weight: 600;
+  }
+
+.edit-address, .edit-contact{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.edit-address.active, .edit-contact.active{
+    max-height: 700px; /* set the maximum height to be greater than the content height */
+    transition: max-height 0.3s ease-in; /* use "ease-in" timing function for a smoother transition */
+}
+
+.address-form, .contact-form{
+    margin-top: 30px;
+}
+
+.address-form label, .contact-form label{
+    width: 30%;
+}
+
+.address-form .input-field, .contact-form .input-field{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.address-form .address-buttons, .contact-form .contact-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.address-buttons button, .contact-buttons button{
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.cancel-address-edit-button, .cancel-contact-edit-button{
+    background-color: red;
+}
+
+.save-address-button, .save-contact-button{
+    background-color: green;
+}
+

@@ -42,7 +42,7 @@ const navLinkHighlight = ()=>{
     //console.log(navbarLinks.length);
     for (var i = 0; i < navbarLinks.length; i++) {
       var linkURL = navbarLinks[i].href;
-      console.log(linkURL + " --- " + currentURL);
+      
       if (currentURL === linkURL) {
         // Add the "current" class to the corresponding a tag
         navbarLinks[i].classList.add("current");
