@@ -38,7 +38,7 @@ total.textContent = `$${localStorage.getItem('totalPrice')}`;
 
 /**----------------- Validate Payment Details----------------------- */
 let cardNumberField = document.getElementById('card-number');
-let cardNameField = docuemnt.getElementById('card-holder-name');
+let cardNameField = document.getElementById('card-holder-name');
 let expiryMonthField = document.getElementById('expiry-month');
 let expiryYearField = document.getElementById('expiry-year')
 let cvvField = document.getElementById('cvv');
