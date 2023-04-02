@@ -84,7 +84,7 @@
             <div class="billing-details">
                 <h2>Billing Address</h2>
                 <div class="address-summary">
-                    <h5>Ramakrishna Rd, Wellawatta, Sri Lanka</h5>
+                    <h5 id="address">Please edit the address</h5>
                     <button class="edit-button">
                         <span class="edit-button-text">Edit</span>
                         <span class="edit-button-icon">&#9660;</span>
@@ -127,20 +127,21 @@
                             <input type="country" name="country" id="country">
                         </div>
 
-                        <div class="address-buttons">
-                            <button class="cancel-address-edit-button">Cancel</button>
-                            <button type="submit" class="save-address-button">Save</button>
-                        </div>
+                        
                             
                         
                     </form>
+                    <div class="address-buttons">
+                        <button class="cancel-address-edit-button" id="cancel-address-edit-button">Cancel</button>
+                        <button class="save-address-button" id="save-address-button">Save</button>
+                    </div>
                 </div>
             </div>
 
             <div class="contact-details">
                 <h2>Contact Details</h2>
                 <div class="contact-summary">
-                    <h5>w1901988@westminster.ac.uk</h5>
+                    <h5 id="contact">Please edit the contact</h5>
                     <button class="edit-button">
                         <span class="edit-button-text">Edit</span>
                         <span class="edit-button-icon">&#9660;</span>
@@ -159,20 +160,31 @@
                             <input type="text" name="phone" id="phone">
                         </div>
 
-                        <div class="contact-buttons">
-                            <button class="cancel-contact-edit-button">Cancel</button>
-                            <button type="submit" class="save-contact-button">Save</button>
-                        </div>
+                        
                     </form>
+                    <div class="contact-buttons">
+                        <button class="cancel-contact-edit-button">Cancel</button>
+                        <button class="save-contact-button">Save</button>
+                    </div>
 
                     
                 </div>
                 
+            </div>
+
+            <div class="confirm-order">
+                <button class="confirm-payment">Confirm Order</button>
             </div>
         </div>
     </div>
     
     <script src="../js/checkout.js"></script>
     
+
+    <footer>
+        <!-- include the navbar -->
+        <div id="footer-placeholder"></div>
+    </footer>
+    <script src="../js/footer.js"></script>
   </body>
 </html>

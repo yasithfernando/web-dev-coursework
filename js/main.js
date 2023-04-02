@@ -6,24 +6,10 @@ xhr.open('GET', '../global/navbar.html', true);
 
 xhr.send();
 
-let xhrFooter = new XMLHttpRequest();
-
-xhrFooter.open('GET', '../global/footer.html', true);
-
-xhrFooter.send();
-
 xhr.onload = function(){
     if (this.status == 200) {
         document.getElementById('navbar-placeholder').innerHTML = this.responseText;
     }
-}
-
-
-
-xhrFooter.onload = function(){
-  if(this.status == 200) {
-    document.getElementById('footer-placeholder').innerHTML = this.responseText;
-  }
 }
 
 
@@ -51,4 +37,6 @@ const navLinkHighlight = ()=>{
   });
 }
 
-  document.getElementsByClassName('body').onload(navLinkHighlight());
+  //document.getElementsByTagName('body').onLoad(navLinkHighlight());
+navLinkHighlight()
+  //window.addEventListener('load', navLinkHighlight());
