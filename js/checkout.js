@@ -63,20 +63,6 @@ function validatePayment(){
 
 
 function validatePaymentDetails(cardNumber, cardName, expiryMonth, expiryYear, cvv) {
-  // Regex for card number validation
-  var cardNumberRegex = /^\d{13,19}$/;
-
-  // Regex for card name validation
-  var cardNameRegex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
-
-  // Regex for expiry month validation
-  var expiryMonthRegex = /^(0?[1-9]|1[0-2])$/;
-
-  // Regex for expiry year validation
-  var expiryYearRegex = /^(20)\d{2}$/;
-
-  // Regex for CVV validation
-  var cvvRegex = /^[0-9]{3,4}$/;
 
   if (!cardNumberRegex.test(cardNumber)) {
     console.log("Invalid ard number")
