@@ -1,6 +1,11 @@
+body{
+    
+}
+
 .container{
     height: 80vh;
-    
+    position: relative;
+    flex-flow: column;
 }
 
 .sitemap-heading {
@@ -13,8 +18,8 @@
 
 .sitemap-container {
     position: relative;
-    left: 223px;
-    bottom: 247px;
+    left: 25px;
+    bottom: 290px;
 }
 
 #svg-home {
