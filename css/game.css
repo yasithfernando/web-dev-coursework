@@ -32,6 +32,10 @@
 .incorrect {
     background-color: #dc3545;
 }
+.background{
+    opacity: 100%;
+    background-size: cover;
+}
 
 /* HUD */
 
