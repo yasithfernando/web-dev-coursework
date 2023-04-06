@@ -1,9 +1,5 @@
-body{
-    
-}
-
 .container{
-    height: 80vh;
+    height: 95vh;
     position: relative;
     flex-flow: column;
 }
