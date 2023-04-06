@@ -40,12 +40,6 @@ function updateSelectedProducts() {
     const selectedItem = document.createElement("div");
     selectedItem.classList.add("selected-item");
 
-    // Add the product image to the list item
-    // const itemImage = document.createElement("img");
-    // itemImage.classList.add("item-image");
-    // itemImage.src = cart[i].image;
-    // selectedItem.appendChild(itemImage);
-
     // Add the product name and quantity to the list item
     const itemName = document.createElement("div");
     itemName.classList.add("item-name");
@@ -114,26 +108,7 @@ function clearCart() {
     const nameField = document.querySelector("#name-field");
     const contactField = document.querySelector("#contact-field");
   
-    // // Get the name and contact values
-    // const nameValue = nameField.value;
-    // const contactValue = contactField.value;
-  
-    // // Check if the name and contact fields are not empty
-    // if (nameValue.trim() == "" || contactValue.trim() == "") {
-    //   alert("Please enter your name and contact information.");
-    //   return;
-    // }
-  
-    // Create an object with the order details
-    // const order = {
-    //   productName: nameValue,
-    //   quantity: contactValue,
-    //   price: cart,
-    //   total: total.toFixed(2)
-    // }
-  
     // Save the order details to local storage
-
     console.log(cart);
     if(cart){
       localStorage.setItem('cart', JSON.stringify(cart));
