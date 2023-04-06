@@ -45,6 +45,18 @@
     font-style: normal;
     color: #999;
   }
+
+  .footer address button{
+    height: 55px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #618500;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
   
   .footer__btn {
     display: flex;
@@ -102,6 +114,18 @@
   .legal__links {
     display: flex;
     align-items: center;
+  }
+
+  .legal__links button{
+    height: 55px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #ffffff;
+    color: #030303;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
   }
   
   .heart {
