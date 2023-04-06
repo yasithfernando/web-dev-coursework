@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js"></script>
+    
+  </head>
+  <body>
+    <header>
+        <!-- include the navbar -->
+        <div id="navbar-placeholder"></div>
+    </header>
+    
+    <div class="container">
+        <div class="checkout-container">
+            <div class="order-details">
+                <h2>Order Details</h2>
+                <div class="details">
+                    <div class="details-heading">
+                        <h3>Reference Number:</h3>
+                        <h3>Description:</h3>
+                        <h3>Amount:</h3>
+                    </div>
+                    <div class="details-values">
+                        <h4 id="reference-number">21423546</h4>
+                        <h4 id="description">Dummy Description</h4>
+                        <h4 id="total-price">189.5 USD</h4>
+                    </div>
+                    
+                </div>
+
+                <div class="items">
+                    <ul id="item-cards">
+                                               
+                    </ul>
+                    <div class="total">
+                        <h3 style="margin-right: 10px;">Total:</h3>
+                        <h3 id="total-label">$1200.50</h3>
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="payment-details">
+                <h2>Payment Details</h2>
+                <form action="" class="payment-form" id="payment-form">
+                    <div class="form-elements">
+                        <div class="input-field">
+                            <label for="card-number">Card Number</label><br>
+                            <input type="text" name="card-number" id="card-number">
+                        </div>
+
+                        <div class="input-field">    
+                            <label for="expire-date">Expire Date</label><br>
+                            <div style="display: flex; justify-content: center;">
+                                <input type="text" name="expiry-month" id="expiry-month" style="width: 50px; margin: 0; border-width: 1px 0 1px 1px;">
+                                <input type="text" name="expiry-year" id="expiry-year" style="width: 50px; border-width: 1px 1px 1px 1px;">
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="form-elements">    
+                        <div class="input-field">
+                            <label for="card-holder-name">Cardholder Name</label><br>
+                            <input type="text" name="card-holder-name" id="card-holder-name">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="cvv">CVV</label><br>
+                            <input type="text" name="cvv" id="cvv" style="width: 80px;">
+                        </div>
+                    </div>
+                        
+                    
+                </form>
+    
+            </div>
+
+            <div class="billing-details">
+                <h2>Billing Address</h2>
+                <div class="address-summary">
+                    <h5 id="address">Please edit the address</h5>
+                    <button class="edit-button">
+                        <span class="edit-button-text">Edit</span>
+                        <span class="edit-button-icon">&#9660;</span>
+                    </button>
+                </div>
+                <div class="edit-address">
+                    <form action="" class="address-form" id="address-form">
+                        <div class="input-field">
+                            <label for="address-one">Address 1</label><br>
+                            <input type="text" name="address-one" id="address-one">
+                        </div>
+                        
+                        <div class="input-field">
+                            <label for="address-two">Address 2</label><br>
+                            <input type="text" name="address-two" id="address-two">
+                        </div>
+
+                        <div class="input-field">    
+                            <label for="address-three">Address 3</label><br>
+                            <input type="text" name="address-three" id="address-three">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="town">Town/City</label><br>
+                            <input type="text" name="town" id="town">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="state">State/Region</label><br>
+                            <input type="text" name="state" id="state">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="post-code">Post Code/ Zip Code</label><br>
+                            <input type="text" name="post-code" id="post-code">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="country">Country</label><br>
+                            <input type="country" name="country" id="country">
+                        </div>
+
+                        
+                            
+                        
+                    </form>
+                    <div class="address-buttons">
+                        <button class="cancel-address-edit-button" id="cancel-address-edit-button">Cancel</button>
+                        <button class="save-address-button" id="save-address-button">Save</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-details">
+                <h2>Contact Details</h2>
+                <div class="contact-summary">
+                    <h5 id="contact">Please edit the contact</h5>
+                    <button class="edit-button">
+                        <span class="edit-button-text">Edit</span>
+                        <span class="edit-button-icon">&#9660;</span>
+                    </button>
+                </div>
+
+                <div class="edit-contact">
+                    <form class="contact-form" id="contact-form">
+                        <div class="input-field">
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        
+                        <div class="input-field">
+                            <label for="phone">Phone Number</label><br>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+
+                        
+                    </form>
+                    <div class="contact-buttons">
+                        <button class="cancel-contact-edit-button">Cancel</button>
+                        <button class="save-contact-button">Save</button>
+                    </div>
+
+                    
+                </div>
+                
+            </div>
+
+            <div class="confirm-order">
+                <button class="confirm-payment">Confirm Order</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/checkout.js"></script>
+    
+
+    <footer>
+        <!-- include the navbar -->
+        <div id="footer-placeholder"></div>
+    </footer>
+    <script src="../js/footer.js"></script>
+  </body>
+</html>

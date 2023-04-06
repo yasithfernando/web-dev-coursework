@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/feedback.css">
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <title>Fedback</title>
+</head>
+<body>
+    <header>
+        <!-- include the navbar -->
+        <div id="navbar-placeholder"></div>
+    </header>
+
+    <form class="feedback-container" id="feedback-form">
+        <div class="question-container">
+            <p>How satisfied were you with our website today? Choose from 0 to 10, Where 0 is extremely dissatisfied and 10 is extremely satisfied.</p>
+            <div class="radio-buttons-container">
+                <div class="rank-label">
+                    <label for="radio-button">1</label>
+                    <input class="radio-button" type="radio" name="rating" value="1" required>
+                </div>
+                <div class="rank-label">
+                    <label for="radio-button">2</label>
+                    <input class="radio-button" type="radio" name="rating" value="2" required>
+                </div>
+                <div class="rank-label">
+                    <label for="radio-button">3</label>
+                    <input class="radio-button" type="radio" name="rating" value="3" required>
+                </div>
+                <div class="rank-label">
+                    <label for="radio-button">4</label>
+                    <input class="radio-button" type="radio" name="rating" value="4" required>
+                </div>
+                <div class="rank-label">
+                    <label for="radio-button">5</label>
+                    <input class="radio-button" type="radio" name="rating" value="5" required>
+                </div>
+                <div class="rank-label">
+                    <label for="radio-button">6</label>
+                    <input class="radio-button" type="radio" name="rating" value="6" required>
+                </div>
+                <div class="rank-label">
+                    <label for="radio-button">7</label>
+                    <input class="radio-button" type="radio" name="rating" value="7" required>
+                </div>
+                <div class="rank-label">
+                    <label for="radio-button">8</label>
+                    <input class="radio-button" type="radio" name="rating" value="8" required>
+                </div>
+                <div class="rank-label">
+                    <label for="radio-button">9</label>
+                    <input class="radio-button" type="radio" name="rating" value="9" required>
+                </div>
+                <div class="rank-label">
+                    <label for="radio-button">10</label>
+                    <input class="radio-button" type="radio" name="rating" value="10" required>
+                </div>
+
+            </div>
+        </div>
+        <div class="question-container">
+            <p>Could you please tell us your reason to giving this rating?</p>
+            <textarea name="reason" cols="30" rows="7"  required></textarea>
+        </div>
+        <div class="question-container">
+            <p>How did you want to complete this task today?</p>
+            <select name="how"  required>
+                <option value="">--Please choose an option</option>
+                <option value="valueOne">Value One</option>
+                <option value="valueTwo">Value Two</option>
+                <option value="valueThree">Value Three</option>
+                <option value="valueFour">Value Four</option>
+            </select>
+        </div>
+        <div class="question-container">
+            <p>If you had to complete this task again, How would you prefer to do it? (optional)</p>
+            <select name="prefered">
+                <option value="">--Please choose an option</option>
+                <option value="valueOne">Value One</option>
+                <option value="valueTwo">Value Two</option>
+                <option value="valueThree">Value Three</option>
+                <option value="valueFour">Value Four</option>
+            </select>
+            
+        </div>
+        <button id="submitButton" type="submit">SUBMIT</button>
+    </form>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/feedback.js"></script>
+
+    
+
+    <footer>
+        <!-- include the navbar -->
+        <div id="footer-placeholder"></div>
+    </footer>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

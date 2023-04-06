@@ -32,6 +32,10 @@
 .incorrect {
     background-color: #dc3545;
 }
+.background{
+    opacity: 100%;
+    background-size: cover;
+}
 
 /* HUD */
 
@@ -60,4 +64,12 @@
     height: 3.4rem;
     background-color: #56a5eb;
     width: 0%;
+}
+.timer{
+font-size: 2rem;
+background-color: #56a5eb;
+width: 30rem;
+display: flex;
+justify-content: space-between;
+padding: 0.7em 1.8em;
 }

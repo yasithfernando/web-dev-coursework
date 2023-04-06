@@ -27,6 +27,12 @@ nav {
     font-weight: 700;
     font-size: 30px;
 }
+
+.current {
+  color: #618500 !important;
+  border: 1px solid #618500;
+  padding: 3px;
+}
   
 .nav-links ul {
     list-style: none;
@@ -52,16 +58,7 @@ nav {
     color: #618500;
   }
 
-.nav-links li a:active{
-  border: 1px solid black;
-}
 
-a.current {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: red;
-}
   
 .nav-links {
     margin-left: auto;

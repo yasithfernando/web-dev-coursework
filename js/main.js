@@ -13,20 +13,30 @@ xhr.onload = function(){
 }
 
 
+
+
+
+
 //Highlight current page on navbar
-document.addEventListener("DOMContentLoaded", function() {
+const navLinkHighlight = ()=>{
+  document.addEventListener("DOMContentLoaded", function() {
     // Get the current URL
     var currentURL = window.location.href;
   
     // Loop through the navbar links and compare their URLs with the current URL
     var navbarLinks = document.getElementsByTagName("a");
-    console.log(navbarLinks.length);
+    //console.log(navbarLinks.length);
     for (var i = 0; i < navbarLinks.length; i++) {
       var linkURL = navbarLinks[i].href;
-      console.log(linkURL + " --- " + currentURL);
+      
       if (currentURL === linkURL) {
         // Add the "current" class to the corresponding a tag
         navbarLinks[i].classList.add("current");
       }
     }
   });
+}
+
+  //document.getElementsByTagName('body').onLoad(navLinkHighlight());
+navLinkHighlight()
+  //window.addEventListener('load', navLinkHighlight());
