@@ -4,6 +4,8 @@ const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
 
+let timeLeft = document.querySelector(".time-left");
+let countdown;
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
@@ -132,6 +134,16 @@ getNewQuestion = () => {
     availableQuestions.splice(questionIndex, 1);
     // console.log(availableQuestions);
     acceptingAnswers = true;
+
+    clearInterval(countdown);
+    timerDisplay();
+
+    function initial() {
+        count = 11;
+        clearInterval(countdown);
+        timerDisplay();
+      }
+      initial();
 };
 
 choices.forEach(choice => {
@@ -153,14 +165,31 @@ choices.forEach(choice => {
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
-        }, 1000);
+        }, 2000);
 
     });
+    //clear interval(stop timer)
+  clearInterval(countdown);
 });
 
 incrementScore = num => {
     score += num;
     scoreText.innerText = score;
 };
+
+//Timer
+const timerDisplay = () => {
+    countdown = setInterval(() => {
+      count--;
+      timeLeft.innerHTML = `${count}s`;
+      if (count == 0) {
+        clearInterval(countdown);
+      }
+    }, 1000);
+  };
+
+  
+
+  
 
 startGame();
