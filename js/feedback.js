@@ -15,8 +15,10 @@ form.addEventListener("submit", (e)=>{
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form, PUBLIC_KEY)
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
+       alert("Feedback Sent Succesfully!")
     }, function(error) {
        console.log('FAILED...', error);
+       alert("Something went wrong!")
     });
     
 })
